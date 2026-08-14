@@ -20,6 +20,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # `enablement: true` liga o GitHub Pages (source = Actions) na primeira
+      # execução, sem precisar mexer em Settings → Pages na mão.
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
