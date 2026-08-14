@@ -1,8 +1,8 @@
 {
-  "name": "roma-buganza",
+  "name": "layout-portfoliorb",
   "version": "1.0.0",
   "private": true,
-  "description": "Roma & Buganza — estúdio de desenvolvimento. Sites, landing pages, sistemas web e produtos digitais.",
+  "description": "Espelho estático do site da Roma & Buganza para GitHub Pages.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -16,7 +16,8 @@
     "lucide-react": "^0.460.0",
     "next": "^14.2.5",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^20",

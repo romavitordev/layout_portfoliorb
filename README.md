@@ -19,8 +19,16 @@ mostrar a interface sem depender de servidor, domínio ou variável de ambiente.
 | Cartão social | `app/opengraph-image.tsx` (edge runtime) | removido — cai na URL de `imagens.og` |
 | `basePath` | nenhum | `/layout_portfoliorb` |
 | `brand.url` | domínio real | a própria URL do Pages |
+| Captação de leads | `/api/leads` + banco + e-mail | `NEXT_PUBLIC_LEADS=off` → formulário abre o WhatsApp |
+| Painel `/admin` | existe, protegido por JWT | não existe |
 
 Fora isso, o conteúdo, os componentes e o design são idênticos.
+
+> **Por que o back-end não vem junto:** GitHub Pages serve arquivo estático — não roda
+> route handler, middleware nem banco. Por isso o espelho não tem `app/api`, `app/admin`,
+> `middleware.ts` nem Prisma, e o formulário de orçamento cai no WhatsApp. Ao sincronizar
+> a partir do repo principal, esses caminhos precisam ser removidos, senão
+> `output: 'export'` falha no build.
 
 ## Rodando
 
