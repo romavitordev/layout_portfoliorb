@@ -26,8 +26,8 @@ export const brand = {
   instagramUrl: 'https://www.instagram.com/', // PLACEHOLDER
   github: 'https://github.com/romavitordev',
   linkedin: 'https://www.linkedin.com/in/romavitordev',
-  // Mirror: aponta pro próprio GitHub Pages, pra canonical/sitemap/robots
-  // deste espelho não reivindicarem o domínio real.
+  // Mirror: aponta pro proprio GitHub Pages, pra canonical/sitemap/robots
+  // deste espelho nao reivindicarem o dominio real.
   url: 'https://romavitordev.github.io/layout_portfoliorb',
   base: 'Sorocaba/SP — atendemos remoto no Brasil inteiro',
   fundacao: 2024,
