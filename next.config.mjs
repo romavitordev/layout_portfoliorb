@@ -15,6 +15,10 @@ const nextConfig = {
   basePath,
   trailingSlash: true,
   env: {
+    // URL publica deste espelho. Antes o `lib/site.ts` era REESCRITO na
+    // sincronizacao pra trocar o dominio — string replace fragil. Agora
+    // o arquivo e identico ao do repo principal e so a variavel muda.
+    NEXT_PUBLIC_SITE_URL: 'https://romavitordev.github.io/layout_portfoliorb',
     // Usado em assets referenciados por src "cru", que não ganham
     // basePath automático como next/link e next/image.
     NEXT_PUBLIC_BASE_PATH: basePath,
